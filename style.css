@@ -16,3 +16,24 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+.plan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Icone do simbolo de música*/
+.plan img{
+    max-width: 50px;
+    max-height: auto;
+    align-items: center;
+}
+
+.plan a{
+    flex:1;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}
