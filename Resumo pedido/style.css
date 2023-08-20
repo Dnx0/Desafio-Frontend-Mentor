@@ -5,6 +5,7 @@
     --cor-fundo: hsl(225, 100%, 98%);
     --azul-escuro: hsl(223, 47%, 23%);
     --negrito: hsl(224, 23%, 55%);
+    --link: hsl(245, 75%, 52%);
 }
 
 * {
@@ -12,20 +13,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
+
+
 body{
-    background-color: var(--cor-fundo);
-    
+    background: url('/Resumo pedido/images/pattern-background-desktop.svg');    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
 }
 
 main{
-    width: 450px;
+    min-width: 375px;
+    max-width: 450px;
     height: 700px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 8%;
-    
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
 }
 .imgprincipal{
     height: 200px;
@@ -35,6 +49,8 @@ main{
 article{
     height: 100%;
     width: 100%;
+    padding: 0 2rem;
+    text-align: center;
 }
 
 article h1{
@@ -48,6 +64,9 @@ article h1{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: var(--cor-fundo);
+    margin: 2rem 0;
+    border-radius: 1rem;
 }
 /*Icone do simbolo de música*/
 .plan img{
@@ -62,6 +81,15 @@ article h1{
 /*Fazendo o change ir para o final do card*/
 .plan a{
     margin-left: auto;
+    color: var(--link);
+    font-weight: 500;
+    font-size: 90%;
+    transition: all 0.3s;
+}
+
+.plan a:hover{
+    color: var(--azul-escuro);
+    text-decoration: none;
 }
 
 .price{
@@ -72,4 +100,34 @@ article h1{
 .button{
     display: flex;
     flex-direction: column;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+
+}
+
+.confirm{
+    
+    color: white;
+    background-color: var(--link);
+    font-weight: 700;
+    
+    border-radius: 0.8rem;
+    height: 4em;
+    margin-bottom: 1.5rem;
+}
+
+.confirm:hover{
+    background-color: var(--azul-escuro);
+}
+
+.cancel{
+    background-color: var(--cor-fundo);
+    color: var(--link);
+}
+
+.cancel:hover{
+    color: var(--azul-escuro);
 }
