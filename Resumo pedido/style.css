@@ -56,7 +56,7 @@ article h1{
     align-items: center;
 }
 
-.plan span{
+.plan p{
     color: var(--negrito);
 }
 /*Fazendo o change ir para o final do card*/
