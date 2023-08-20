@@ -1,0 +1,75 @@
+/*Importando fontes do google fonts, red hat 500, 700 e 900 */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/*Definindo variaveis de cor*/
+:root{
+    --cor-fundo: hsl(225, 100%, 98%);
+    --azul-escuro: hsl(223, 47%, 23%);
+    --negrito: hsl(224, 23%, 55%);
+}
+
+* {
+    /* Nesse caso, estamos zerando a margin e o padding. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    
+}
+
+main{
+    width: 450px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    
+}
+.imgprincipal{
+    height: 200px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+article{
+    height: 100%;
+    width: 100%;
+}
+
+article h1{
+    color: var(--azul-escuro);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.plan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Icone do simbolo de música*/
+.plan img{
+    max-width: 50px;
+    max-height: auto;
+    align-items: center;
+}
+
+.plan span{
+    color: var(--negrito);
+}
+/*Fazendo o change ir para o final do card*/
+.plan a{
+    margin-left: auto;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
