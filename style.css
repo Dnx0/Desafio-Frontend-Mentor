@@ -1,0 +1,18 @@
+* {
+    /* Nesse caso, estamos zerando a margin e o padding. */
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 450px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
